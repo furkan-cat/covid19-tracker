@@ -1,7 +1,5 @@
-import { Button, Container, Stack, Text } from "@chakra-ui/react";
-import React from "react";
-import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { Button, Container, Stack, Text } from "@chakra-ui/react";
 import { routes } from "../utils/constants";
 
 /**
@@ -10,7 +8,6 @@ import { routes } from "../utils/constants";
 */
 
 export default function ErrorBoundary() {
-  const { total, stats } = useSelector((state) => state.country);
   const navigate = useNavigate();
 
   return (
